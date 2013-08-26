@@ -69,7 +69,7 @@ Particle.prototype = {
 	r:5,
 	vx:0,
 	vy:0,
-	color:'red',
+	color: 'rgb(224,226,206)',
 	alpha:0.65,
 	maxp: MAX_SUBP,
 	nump: 0,
@@ -148,10 +148,13 @@ for (var i = NUM_PARTICLES; i > 0; --i) {
 		y: canvas.height/2 + (Math.random()-0.5)*canvas.height/8,
 		vy: (Math.random()-0.5)*MAX_V,
 		vx: (Math.random()-0.5)*MAX_V,
+		/*
 		color: 'rgb(' 
 			+ Math.floor(Math.random()*255) + ','
 			+ Math.floor(Math.random()*255) + ','
 			+ Math.floor(Math.random()*255) + ')',
+*/
+		//fixed color
 		r: RADIUS
 	}));
 }
